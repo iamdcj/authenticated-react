@@ -15,7 +15,7 @@ function App() {
       .then(response => {
         return response.json();
       })
-      .then(({ loggedIn }) => {
+      .then(() => {
         const from = location.state.from.pathname || "/users";
 
         setAuthenticated(true);
